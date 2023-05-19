@@ -1,0 +1,47 @@
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.red {
+  background-color: #ff5f5f;
+}
+
+.yellow {
+  background-color: #ffd25e;
+}
+
+.green {
+  background-color: #6fdf6f;
+}
+
+.light span.message {
+  display: none;
+}
+
+.light.active span.message {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.timer {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
